@@ -1,0 +1,104 @@
+/* --- RESET GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #161625);
+    color: #f1f1f1;
+    text-align: center;
+}
+
+/* --- ENCABEZADO: TÍTULO Y LOGO EN FILA --- */
+.header {
+    position: relative;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(255, 255, 255, 0.1); /* Más claro */
+    backdrop-filter: blur(15px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- ESTILOS DEL TÍTULO --- */
+.header h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+/* --- LOGO ALINEADO A LA DERECHA --- */
+.logo {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.3));
+}
+
+/* --- SECCIONES CON MEJOR VISIBILIDAD --- */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.2); /* Más luminoso */
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* --- TÍTULOS MÁS CLAROS --- */
+.container h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+/* --- TEXTO NORMAL MÁS CLARO --- */
+.container p,
+.container ul {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* --- MEJOR ESTILO PARA LAS LISTAS --- */
+.container ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.container ul li {
+    text-align: left;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #f5f5f5;
+}
+
+/* --- RESALTAR TÍTULOS DE LAS LISTAS --- */
+.container ul li strong {
+    color: #ffcc00;
+    font-size: 1.2rem;
+}
+
+/* --- ÍCONO DE CHECK EN LISTAS --- */
+.container ul li::before {
+    content: "✔ ";
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* --- PIE DE PÁGINA MÁS CLARO --- */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+}
