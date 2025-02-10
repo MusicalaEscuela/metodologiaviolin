@@ -1,0 +1,130 @@
+/* Fuentes y Colores */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    width: 120px;
+    height: auto;
+}
+
+/* ENCABEZADO */
+.header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #1A237E;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+}
+
+#animationCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* NIVELES */
+.nivel {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
+
+.nivel.blanco { background-color: #ddd; }
+.nivel.verde { background-color: #4CAF50; }
+.nivel.azul { background-color: #283593; }
+
+/* TESTIMONIOS */
+.testimonios {
+    background: #E3F2FD;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* BOTÓN VOLVER ARRIBA */
+.back-to-top {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3949AB;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-to-top:hover {
+    background-color: #283593;
+}
+
+/* Barra de progreso */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #3949AB;
+    width: 0%;
+    z-index: 999;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    padding: 20px;
+    background: #1A237E;
+    color: white;
+}
+
+.tematicas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tematicas li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.tematicas li::before {
+    content: '✔️'; /* Icono para cada ítem */
+    margin-right: 8px;
+    color: #ff5722; /* Color del ícono */
+    font-size: 1.3rem;
+}
+
+.tematicas h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+}
+
+.tematicas cite {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+}
